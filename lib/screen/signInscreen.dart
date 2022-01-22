@@ -1,3 +1,4 @@
+import 'package:electronic_hub/screen/homescreen.dart';
 import 'package:electronic_hub/screen/signUpscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:electronic_hub/default.dart';
@@ -14,7 +15,7 @@ class signIn extends StatelessWidget {
         Container(
           decoration: BoxDecoration(
               image: DecorationImage(
-                  fit: BoxFit.cover, image: AssetImage("asset/ee1 (5).jpg"))),
+                  fit: BoxFit.cover, image: AssetImage("asset/home1.jpg"))),
         ),
         Scaffold(
           backgroundColor: Colors.transparent,
@@ -33,7 +34,7 @@ class signIn extends StatelessWidget {
                     BoxShadow(
                         offset: Offset(0, 0),
                         blurRadius: 4.32,
-                        color: kPrimaryColor.withOpacity(0.7))
+                        color: Colors.blueAccent.withOpacity(0.4))
                   ]),
                   child: Text(
                     "ElectronIc HuB",
@@ -58,13 +59,15 @@ class signIn extends StatelessWidget {
                   height: size.height * .0455,
                 ),
                 ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.to(Home());
+                    },
                     style: ElevatedButton.styleFrom(
                       side: BorderSide(
                         width: 5.0,
                         color: Colors.white,
                       ),
-                      primary: Colors.transparent,
+                      primary: Colors.blueAccent,
                       shape: new RoundedRectangleBorder(
                         borderRadius: new BorderRadius.circular(30.0),
                       ),
@@ -87,9 +90,9 @@ class signIn extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                       side: BorderSide(
                         width: 5.0,
-                        color: kPrimaryColor,
+                        color: Colors.white,
                       ),
-                      primary: Colors.white,
+                      primary: Colors.blueAccent,
                       shape: new RoundedRectangleBorder(
                         borderRadius: new BorderRadius.circular(30.0),
                       ),
@@ -97,7 +100,7 @@ class signIn extends StatelessWidget {
                     child: Text(
                       "Sign Up",
                       style: TextStyle(
-                          fontSize: size.height * .0533, color: kPrimaryColor),
+                          fontSize: size.height * .0533, color: Colors.white),
                     ))
               ],
             ),

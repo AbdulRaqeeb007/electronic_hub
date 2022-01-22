@@ -11,7 +11,7 @@ class signUp extends StatelessWidget {
         Container(
           decoration: BoxDecoration(
               image: DecorationImage(
-                  fit: BoxFit.cover, image: AssetImage("asset/ee1 (5).jpg"))),
+                  fit: BoxFit.cover, image: AssetImage("asset/home1.jpg"))),
         ),
         Scaffold(
           backgroundColor: Colors.transparent,
@@ -30,7 +30,7 @@ class signUp extends StatelessWidget {
                     BoxShadow(
                         offset: Offset(0, 0),
                         blurRadius: 4.32,
-                        color: kPrimaryColor.withOpacity(0.7))
+                        color: Colors.blueAccent.withOpacity(0.5))
                   ]),
                   child: Text(
                     "ElectronIc HuB",
@@ -68,7 +68,7 @@ class signUp extends StatelessWidget {
                         width: 5.0,
                         color: Colors.white,
                       ),
-                      primary: kPrimaryColor,
+                      primary: Colors.blueAccent,
                       shape: new RoundedRectangleBorder(
                         borderRadius: new BorderRadius.circular(30.0),
                       ),
